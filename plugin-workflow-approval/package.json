@@ -1,0 +1,37 @@
+{
+  "name": "@nocobase/plugin-workflow-approval",
+  "displayName": "Workflow: Approval node (compatible implementation)",
+  "displayName.zh-CN": "工作流：审批节点（兼容实现）",
+  "description": "A behaviorally compatible reimplementation of the NocoBase workflow approval node, rebuilt from black-box observation for interoperability research. Not affiliated with or endorsed by NocoBase Inc.",
+  "version": "1.0.0-beta.2",
+  "main": "dist/server/index.js",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "nocobase",
+    "nocobase-plugin",
+    "workflow",
+    "approval"
+  ],
+  "files": [
+    "dist",
+    "client.js",
+    "client-v2.js",
+    "server.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:client": "node scripts/build.js client",
+    "build:client-v2": "node scripts/build.js client-v2",
+    "build:server": "node scripts/build.js server",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "@nocobase/database": "2.x",
+    "@nocobase/server": "2.x",
+    "@nocobase/utils": "2.x",
+    "@nocobase/plugin-workflow": ">=0.17.0-alpha.3"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tgz
+*.log
+*.mp4
+analysis/
+artifacts/
+evidence/
+storage/
+.DS_Store
+.zcode/
+tools/demo-state.json
+tools/story-leave-state.json
+docs/ledger-draft-*

@@ -1,0 +1,678 @@
+{
+  "side": "demo",
+  "base": "<demo-base-url>",
+  "scenarios": {
+    "SIMA1-or-sign": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 4
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 2
+          },
+          {
+            "userId": "sima",
+            "status": 3
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 1,
+            "jobs": [
+              {
+                "status": 1,
+                "result": {
+                  "status": 2,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>",
+                  "records": [
+                    {
+                      "id": "<recordId>",
+                      "status": 2,
+                      "userId": "root",
+                      "comment": "SIMA1-or-sign act"
+                    },
+                    {
+                      "id": "<recordId>",
+                      "status": 3,
+                      "userId": "sima",
+                      "comment": null,
+                      "updatedAt": "<isoDate>"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA2-countersign": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 3
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 2
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 0,
+            "jobs": [
+              {
+                "status": 0,
+                "result": {
+                  "status": 2,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA3-sequential": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          },
+          {
+            "userId": "sima",
+            "status": null
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 3
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 2
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 0,
+            "jobs": [
+              {
+                "status": 0,
+                "result": {
+                  "status": 2,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA4-voting": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 3
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 2
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 0,
+            "jobs": [
+              {
+                "status": 0,
+                "result": {
+                  "status": 2,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA5-reject": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": -1
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": -1
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": -5,
+            "jobs": [
+              {
+                "status": -5,
+                "result": {
+                  "status": -1,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>",
+                  "records": [
+                    {
+                      "id": "<recordId>",
+                      "status": -1,
+                      "userId": "root",
+                      "comment": "SIMA5-reject act"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA6-return-resubmit": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 4
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 1
+          },
+          {
+            "userId": "root",
+            "status": 2
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": -6,
+            "jobs": [
+              {
+                "status": -6,
+                "result": {
+                  "status": 1,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>",
+                  "records": [
+                    {
+                      "id": "<recordId>",
+                      "status": 1,
+                      "userId": "root",
+                      "comment": "return it"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "status": 1,
+            "jobs": [
+              {
+                "status": 1,
+                "result": {
+                  "status": 2,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "SIMA6-return-resubmit-round2",
+                  "records": [
+                    {
+                      "id": "<recordId>",
+                      "status": 2,
+                      "userId": "root",
+                      "comment": "round2 approve"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA7-withdraw": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 0
+        },
+        "records": [],
+        "rounds": [],
+        "executions": [
+          {
+            "status": -4,
+            "jobs": [
+              {
+                "status": -4,
+                "result": {
+                  "status": 0,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>",
+                  "records": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA8-delegate": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 3
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 8
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 0,
+            "jobs": [
+              {
+                "status": 0,
+                "result": {
+                  "status": 0,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA9-add": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 3
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          },
+          {
+            "userId": "sima",
+            "status": 0
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 0,
+            "jobs": [
+              {
+                "status": 0,
+                "result": {
+                  "status": 0,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA10-branch-end-reject": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": -1
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": -1
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": -5,
+            "jobs": [
+              {
+                "status": -5,
+                "result": {
+                  "status": -1,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>",
+                  "records": [
+                    {
+                      "id": "<recordId>",
+                      "status": -1,
+                      "userId": "root",
+                      "comment": "SIMA10-branch-end-reject act"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA11-filter-assignees": {
+      "errors": [
+        "no root record found for acting"
+      ],
+      "created": {
+        "approvalId": "<id>",
+        "records": []
+      },
+      "evidence": {
+        "approval": {
+          "status": 4
+        },
+        "records": [],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 1,
+            "jobs": [
+              {
+                "status": 1,
+                "result": {
+                  "status": 4,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA12-variable-assignees": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 4
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 2
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 1,
+            "jobs": [
+              {
+                "status": 1,
+                "result": {
+                  "status": 2,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>",
+                  "records": [
+                    {
+                      "id": "<recordId>",
+                      "status": 2,
+                      "userId": "root",
+                      "comment": "SIMA12-variable-assignees act"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "SIMA13-return-to-node": {
+      "errors": [],
+      "created": {
+        "approvalId": "<id>",
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          }
+        ]
+      },
+      "evidence": {
+        "approval": {
+          "status": 3
+        },
+        "records": [
+          {
+            "userId": "root",
+            "status": 0
+          },
+          {
+            "userId": "root",
+            "status": 2
+          }
+        ],
+        "rounds": [],
+        "executions": [
+          {
+            "status": 0,
+            "jobs": [
+              {
+                "status": 1,
+                "result": {
+                  "status": 2,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>",
+                  "records": [
+                    {
+                      "id": "<recordId>",
+                      "status": 2,
+                      "userId": "root",
+                      "comment": "L1 pass"
+                    }
+                  ]
+                }
+              },
+              {
+                "status": 0,
+                "result": {
+                  "status": 0,
+                  "data": {},
+                  "id": "<recordId>",
+                  "createdById": 1,
+                  "updatedById": 1,
+                  "title": "<recordTitle>"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "demo": "<demo-base-url>",
+  "local": "http://127.0.0.1:13800",
+  "verdict": "IDENTICAL",
+  "totalDiffs": 0,
+  "scenarios": [
+    {
+      "name": "SIMA1-or-sign",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA2-countersign",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA3-sequential",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA4-voting",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA5-reject",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA6-return-resubmit",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA7-withdraw",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA8-delegate",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA9-add",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA10-branch-end-reject",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA11-filter-assignees",
+      "deviation": true,
+      "diffs": [
+        {
+          "kind": "records",
+          "official": [],
+          "clone": [
+            {
+              "userId": "root",
+              "status": 2
+            }
+          ]
+        },
+        {
+          "kind": "executions",
+          "official": [
+            {
+              "status": 1,
+              "jobs": [
+                {
+                  "status": 1,
+                  "result": {
+                    "status": 4,
+                    "data": {},
+                    "id": "<recordId>",
+                    "createdById": 1,
+                    "updatedById": 1,
+                    "title": "<recordTitle>"
+                  }
+                }
+              ]
+            }
+          ],
+          "clone": [
+            {
+              "status": 1,
+              "jobs": [
+                {
+                  "status": 1,
+                  "result": {
+                    "status": 2,
+                    "data": {},
+                    "id": "<recordId>",
+                    "createdById": 1,
+                    "updatedById": 1,
+                    "title": "<recordTitle>",
+                    "records": [
+                      {
+                        "id": "<recordId>",
+                        "status": 2,
+                        "userId": "root",
+                        "comment": "SIMA11-filter-assignees act"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SIMA12-variable-assignees",
+      "deviation": false,
+      "diffs": []
+    },
+    {
+      "name": "SIMA13-return-to-node",
+      "deviation": false,
+      "diffs": []
+    }
+  ]
+}
